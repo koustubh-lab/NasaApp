@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.App .loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.loading-state > i {
+    font-size: 3rem;
+    color: gray;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
